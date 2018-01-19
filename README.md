@@ -1,4 +1,4 @@
-1. How create rb_dziwne_new() function to create object "dziwne"
+1. How create rb_dziwne_new() function to create object "Dziwne"
 
 for example:
 
@@ -50,3 +50,5 @@ end
 
 I need check the library in many system. Search in many places.
 /include and /lib
+
+6. How check valgrind memory leak of my extension.
