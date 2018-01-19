@@ -15,3 +15,6 @@ t = Dziwne.new
 p t.ustaw(nil)
 p t.ustaw(t.a)
 p t.cosik
+
+t = Dziwne.test
+p t.ustaw nil
