@@ -16,5 +16,13 @@ p t.ustaw(nil)
 p t.ustaw(t.a)
 p t.cosik
 
-t = Dziwne.test
-p t.ustaw nil
+y = Dziwne.test
+p y.ustaw nil
+p t
+p y
+
+#Is possible to check this? I found to compare free function of my object
+# to free function of parameter (pointer) and check id. But I dont know what
+# to do this.
+
+#p t.ustaw y
