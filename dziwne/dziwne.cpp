@@ -63,9 +63,22 @@ return Qnil;
 }
 
 
-
-
 VALUE cDziwne;
+
+extern "C"
+{
+	VALUE dziwne_new()
+	{
+		return t_allocate(cDziwne);
+	}
+
+	VALUE dziwne_test()
+	{
+		VALUE obj = dziwne_new();
+		t_ustaw(obj, LONG2FIX(1));
+		return obj;
+	}
+}
 
 extern "C" void Init_Dziwne()
 {
@@ -74,4 +87,5 @@ extern "C" void Init_Dziwne()
 /* rb_define_method(cDziwne, "żółte", (ruby_method*) &t_cosik, 0); */
  rb_define_method(cDziwne, "cosik", (ruby_method*) &t_cosik, 0);
  rb_define_method(cDziwne, "ustaw", (ruby_method*) &t_ustaw, 1);
+ rb_define_singleton_method(cDziwne, "test", (ruby_method*)&dziwne_test, 0);
 }
