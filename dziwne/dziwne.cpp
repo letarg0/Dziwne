@@ -69,7 +69,8 @@ extern "C"
 {
 	VALUE dziwne_new()
 	{
-		return t_allocate(cDziwne);
+	VALUE aaa;
+		return t_allocate(aaa);
 	}
 
 	VALUE dziwne_test()
@@ -87,5 +88,5 @@ extern "C" void Init_Dziwne()
 /* rb_define_method(cDziwne, "żółte", (ruby_method*) &t_cosik, 0); */
  rb_define_method(cDziwne, "cosik", (ruby_method*) &t_cosik, 0);
  rb_define_method(cDziwne, "ustaw", (ruby_method*) &t_ustaw, 1);
- rb_define_singleton_method(cDziwne, "test", (ruby_method*)&dziwne_test, 0);
+ rb_define_method(cDziwne, "test", (ruby_method*)&dziwne_test, 0);
 }

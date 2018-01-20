@@ -26,7 +26,6 @@ p a.ustaw nil
 #this not working
 p y.test
 
-
 #Is possible to check this? I found to compare free function of my object
 # to free function of parameter (pointer) and check id. But I dont know what
 # to do this.
